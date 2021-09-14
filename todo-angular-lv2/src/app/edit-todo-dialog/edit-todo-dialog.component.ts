@@ -28,6 +28,10 @@ export class EditTodoDialogComponent implements OnInit {
       ...this.todo,
       ...form.value
     }
+
+
+    // when we are closing it, we are sending the update data
+    // on the todos components, we are getting subscribed to this close so that we can get the updated data
     
     this.dialogRef.close(updatedTodo)
   }

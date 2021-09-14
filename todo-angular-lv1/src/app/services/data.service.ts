@@ -15,7 +15,11 @@ const headers = {
 })
 export class DataService {
 
-  private apiURL = "http://localhost:5000/data"
+
+  // this is for the localhost data
+  // private apiURL = "http://localhost:5000/data"
+  private apiURL = "https://my-json-server-angular.herokuapp.com/data"
+
 
   constructor(private http: HttpClient) { }
 

@@ -6,6 +6,12 @@ import tippy from 'tippy.js'
 })
 export class ToolTipDirective implements AfterViewInit, OnChanges {
 
+
+  //this is use for the alias, that we can use it as the tooltipContent = "Edit Button
+  // @Input() tooltipContent: string;
+
+
+  //this is use for the alias, that we can use it as the appToolTip = "Edit Button"
   @Input('appToolTip') tooltipContent: string;
 
   public tippyInstance: any;
